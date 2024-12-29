@@ -1,9 +1,9 @@
 package com.codercamp.cleanarchitecturemvvm.data.repositoryImp
 
 import com.codercamp.cleanarchitecturemvvm.data.model.Product
-import com.codercamp.cleanarchitecturemvvm.data.servise.ApiService
-import com.codercamp.cleanarchitecturemvvm.data.servise.ResponseResult
-import com.codercamp.cleanarchitecturemvvm.domain.repository.ProductRepository
+import com.codercamp.cleanarchitecturemvvm.data.data_Sources.remote.ApiService
+import com.codercamp.cleanarchitecturemvvm.data.helper.ResponseResult
+import com.codercamp.cleanarchitecturemvvm.data.repository.ProductRepository
 
 class ProductRepositoryImpl(private val api: ApiService) : ProductRepository {
     override suspend fun getProduct(): ResponseResult<List<Product>> {

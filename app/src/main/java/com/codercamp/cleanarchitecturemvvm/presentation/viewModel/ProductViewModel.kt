@@ -3,7 +3,7 @@ package com.codercamp.cleanarchitecturemvvm.presentation.viewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.codercamp.cleanarchitecturemvvm.data.model.Product
-import com.codercamp.cleanarchitecturemvvm.data.servise.ResponseResult
+import com.codercamp.cleanarchitecturemvvm.data.helper.ResponseResult
 import com.codercamp.cleanarchitecturemvvm.domain.useCase.GetProductUseCase
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

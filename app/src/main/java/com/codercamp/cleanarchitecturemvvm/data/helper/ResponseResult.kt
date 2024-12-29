@@ -1,4 +1,4 @@
-package com.codercamp.cleanarchitecturemvvm.data.servise
+package com.codercamp.cleanarchitecturemvvm.data.helper
 
 sealed class ResponseResult<T>(val data: T? = null, val message: String? = null) {
     class Success<T>(data: T?) : ResponseResult<T>(data)

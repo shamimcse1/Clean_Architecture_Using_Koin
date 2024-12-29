@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("kotlin-kapt")
 }
 
 android {
@@ -74,4 +75,10 @@ dependencies {
 
     //GridView
     implementation (libs.androidx.foundation)
+
+
+    implementation ("androidx.room:room-runtime:2.6.1")
+    kapt ("androidx.room:room-compiler:2.6.1")  // For Kotlin
+    // Optional - For Coroutines support
+    implementation ("androidx.room:room-ktx:2.6.1")
 }

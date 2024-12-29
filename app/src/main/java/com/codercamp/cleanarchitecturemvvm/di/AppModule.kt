@@ -1,6 +1,8 @@
 package com.codercamp.cleanarchitecturemvvm.di
 
+import androidx.room.Room
 import com.codercamp.cleanarchitecturemvvm.constants.Constants
+import com.codercamp.cleanarchitecturemvvm.data.data_Sources.local.AppDatabase
 import com.codercamp.cleanarchitecturemvvm.data.repositoryImp.ProductRepositoryImpl
 import com.codercamp.cleanarchitecturemvvm.data.data_Sources.remote.ApiService
 import com.codercamp.cleanarchitecturemvvm.data.repository.ProductRepository
@@ -14,13 +16,19 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 val appModule: Module = module {
     single {
+        Room.databaseBuilder(get(), AppDatabase::class.java, "app_database").build()
+    }
+    single { get<AppDatabase>().productDao() }
+
+    single {
         Retrofit.Builder()
             .baseUrl(Constants.BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(ApiService::class.java)
     }
-    single<ProductRepository> { ProductRepositoryImpl(get()) }
+
+    single<ProductRepository> { ProductRepositoryImpl(get(),get()) }
 
     factory { GetProductUseCase(get()) }
 

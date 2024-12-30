@@ -6,10 +6,11 @@ import com.codercamp.cleanarchitecturemvvm.data.data_Sources.remote.ApiService
 import com.codercamp.cleanarchitecturemvvm.data.helper.ResponseResult
 import com.codercamp.cleanarchitecturemvvm.data.helper.toData
 import com.codercamp.cleanarchitecturemvvm.data.helper.toDomain
-import com.codercamp.cleanarchitecturemvvm.data.repository.ProductRepository
+import com.codercamp.cleanarchitecturemvvm.domain.repository.ProductRepository
 import java.io.IOException
 
-class ProductRepositoryImpl(private val api: ApiService,private val dao: ProductDao) : ProductRepository {
+class ProductRepositoryImpl(private val api: ApiService,private val dao: ProductDao) :
+    ProductRepository {
     override suspend fun getProduct(): ResponseResult<List<Product>> {
         return try {
             val products = api.getProduct()

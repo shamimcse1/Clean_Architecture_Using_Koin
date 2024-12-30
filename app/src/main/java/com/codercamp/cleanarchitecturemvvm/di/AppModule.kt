@@ -5,7 +5,7 @@ import com.codercamp.cleanarchitecturemvvm.constants.Constants
 import com.codercamp.cleanarchitecturemvvm.data.data_Sources.local.AppDatabase
 import com.codercamp.cleanarchitecturemvvm.data.repositoryImp.ProductRepositoryImpl
 import com.codercamp.cleanarchitecturemvvm.data.data_Sources.remote.ApiService
-import com.codercamp.cleanarchitecturemvvm.data.repository.ProductRepository
+import com.codercamp.cleanarchitecturemvvm.domain.repository.ProductRepository
 import com.codercamp.cleanarchitecturemvvm.domain.useCase.GetProductUseCase
 import com.codercamp.cleanarchitecturemvvm.presentation.viewModel.ProductViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel

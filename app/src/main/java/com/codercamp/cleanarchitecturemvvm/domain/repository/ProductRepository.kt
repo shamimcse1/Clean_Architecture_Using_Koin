@@ -1,4 +1,4 @@
-package com.codercamp.cleanarchitecturemvvm.data.repository
+package com.codercamp.cleanarchitecturemvvm.domain.repository
 
 import com.codercamp.cleanarchitecturemvvm.data.model.Product
 import com.codercamp.cleanarchitecturemvvm.data.helper.ResponseResult

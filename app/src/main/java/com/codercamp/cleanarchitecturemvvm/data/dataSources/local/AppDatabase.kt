@@ -1,4 +1,4 @@
-package com.codercamp.cleanarchitecturemvvm.data.data_Sources.local
+package com.codercamp.cleanarchitecturemvvm.data.dataSources.local
 
 import android.content.Context
 import androidx.room.Database

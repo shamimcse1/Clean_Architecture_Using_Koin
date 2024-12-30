@@ -2,9 +2,9 @@ package com.codercamp.cleanarchitecturemvvm.di
 
 import androidx.room.Room
 import com.codercamp.cleanarchitecturemvvm.constants.Constants
-import com.codercamp.cleanarchitecturemvvm.data.data_Sources.local.AppDatabase
+import com.codercamp.cleanarchitecturemvvm.data.dataSources.local.AppDatabase
 import com.codercamp.cleanarchitecturemvvm.data.repositoryImp.ProductRepositoryImpl
-import com.codercamp.cleanarchitecturemvvm.data.data_Sources.remote.ApiService
+import com.codercamp.cleanarchitecturemvvm.data.dataSources.remote.ApiService
 import com.codercamp.cleanarchitecturemvvm.domain.repository.ProductRepository
 import com.codercamp.cleanarchitecturemvvm.domain.useCase.GetProductUseCase
 import com.codercamp.cleanarchitecturemvvm.presentation.viewModel.ProductViewModel

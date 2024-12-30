@@ -1,4 +1,4 @@
-package com.codercamp.cleanarchitecturemvvm.data.data_Sources.local
+package com.codercamp.cleanarchitecturemvvm.data.dataSources.local
 
 import androidx.room.Dao
 import androidx.room.Insert

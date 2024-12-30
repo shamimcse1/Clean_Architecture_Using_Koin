@@ -1,8 +1,8 @@
 package com.codercamp.cleanarchitecturemvvm.data.repositoryImp
 
-import com.codercamp.cleanarchitecturemvvm.data.data_Sources.local.ProductDao
+import com.codercamp.cleanarchitecturemvvm.data.dataSources.local.ProductDao
 import com.codercamp.cleanarchitecturemvvm.data.model.Product
-import com.codercamp.cleanarchitecturemvvm.data.data_Sources.remote.ApiService
+import com.codercamp.cleanarchitecturemvvm.data.dataSources.remote.ApiService
 import com.codercamp.cleanarchitecturemvvm.data.helper.ResponseResult
 import com.codercamp.cleanarchitecturemvvm.data.helper.toData
 import com.codercamp.cleanarchitecturemvvm.data.helper.toDomain

@@ -1,6 +1,6 @@
 # Clean Architecture Using Koin
 
-A sample Android application built using MVVM Architecture, Koin for Dependency Injection, Kotlin Flow, and Room Database. The app fetches product details from FakeStoreAPI(https://fakestoreapi.com/) and supports caching for offline access.
+A sample Android application built using MVVM Architecture, Koin for Dependency Injection, Kotlin Flow, and Room Database. The app fetches product list from FakeStoreAPI(https://fakestoreapi.com/) and supports caching for offline access.
 
 # Features
 

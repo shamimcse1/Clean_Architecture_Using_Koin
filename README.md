@@ -22,7 +22,7 @@ A sample Android application built using MVVM Architecture, Koin for Dependency 
 
 - GridView for presenting product details in a grid format.
 
-Architecture Overview
+# Architecture Overview
 
 ## Presentation Layer
   - ViewModel
